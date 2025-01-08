@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .text-white{
+        color:rgb(6, 6, 6);
+        
+
+    }
+    .rec_arrange
+    {
+        padding:40px 0px;
+        
+    }
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+    a{
+
+        color: white;
+    }
+    .h_hover:hover{
+        color: white;
+
+    }
+    .navbar {
+         border-radius: 0px !important; 
+    }
+    .p {
+        margin: 0px 0  !important;
+    }
+    .btn_check {
+        background-color: #403c65;
+        color: white;
+        border: none;
+        padding:  10px 35px;
+        color: white;
+    }
+    .btn_check:hover
+    {
+        background-color: #403c65;
+        color: white;
+        border: none;
+        padding:  10px 35px;
+        color: white;
+    }
+</style>
+
+
+<body>
+
+    <nav class="navbar" style="background-color:#403c65">
+        <a class="navbar-brand"> Book House</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ image }}" class="img-responsive" alt="{{ title }}">
+            </div>
+            <div class="col-md-8">
+                <h1>Book Name:-{{ title }}</h1>
+                <h4>Author:- {{ author }}</h4>
+                <h4>Year-Of-Publication:-  {{ yearofpub}}</h4>
+                <h4>Publisher:- {{ publisher }}</h4>
+                
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+</body>
+</html>
